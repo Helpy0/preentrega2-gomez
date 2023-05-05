@@ -1,0 +1,172 @@
+* { 
+    margin:0;
+    padding:0;
+    font-weight: 100;
+    font-family: 'Roboto', sans-serif;
+}
+body{
+    background-image: linear-gradient(to left, #FFC0CB, #FFE4E1)
+}
+
+/* Header */
+
+.navlista{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.titulo { 
+    text-align: center;
+    font-size: 30px;
+    background-image: linear-gradient(to left, #FFC0CB, #FFE4E1)
+}
+
+/* Header */
+
+
+/* Index */
+
+.contenedor{ 
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-content: stretch;
+}
+
+.contenedor img {
+    width: 400px;
+    height: 250px;
+}
+
+
+/* Index */
+
+
+/* QueHacer (1) */
+
+.t1 {
+    border: 2px solid black;
+    width: 300px;
+    background-color: blanchedalmond;
+}
+
+.t2 {
+    border: 2px solid black;
+    background-color: blanchedalmond;
+    margin:-290px auto;
+    width: 100px ;  
+}
+
+.cultura{
+    margin-left: 995px;
+    margin-top: 59px;
+}
+
+/* QueHacer (1) */
+
+
+/* CulturaLenguaje (2) */
+
+.japones {
+    border: 2px solid black;
+    background-color: blanchedalmond;
+    width: 300px;
+    margin-top: -290px;
+    margin-left:1021px;
+
+}
+
+/* CulturaLenguaje (2) */
+
+
+/* Gastronomia (3) */
+
+.sushi{
+    margin-top: 15px;
+    margin-left: 100px;
+}
+
+.sushi2 {
+    margin-left: 100px;
+}
+
+.textosushi {
+    margin-left: 700px;
+    margin-top: -300px;
+    width: 400px;
+}
+
+/* Gastronomia (3) */
+
+
+/* Mapas (4) */
+
+.mapas{
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+
+/* Mapas (4) */
+
+
+/* Footer */
+
+.footer{
+    text-align:center;
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+    background-image: linear-gradient(to left, #FFC0CB, #FFE4E1)
+}
+
+/* Footer */
+
+@media (max-width:576px){
+    /*INDEX*/
+    .footer{ 
+        width: 100%;
+        bottom: -176px;
+        background-image: linear-gradient(to left, #FFC0CB, #FFE4E1);
+    } 
+    .titulo{
+        background-image: linear-gradient(to left, #FFC0CB, #FFE4E1);
+    }
+    .contenedor{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+    .navlista {
+        text-align: center;
+    }
+    .gato1{
+        margin-left: 90px;
+    }
+    .titulo{
+        text-align: center;
+    }
+    body{
+        background-image: linear-gradient(to left, #FFC0CB, #FFE4E1)
+    }
+    /*GASTRONOMIA*/
+    .sushi2 img{
+        display: none;
+    }
+    
+    .sushi img{
+    max-width: 80%;
+    height:auto;
+    
+    }
+    .textosushi{
+        padding: 0%;
+        text-align: center;
+        margin-left: 15%;
+        margin-top: 10%;
+    }
+}
