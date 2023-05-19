@@ -1,0 +1,30 @@
+.navlista{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.titulo { 
+    text-align: center;
+    font-size: 30px;
+    background-image: linear-gradient(to left, #FFC0CB, #FFE4E1)
+} 
+
+ol {
+    flex-grow: 1;
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+ol li {
+    font-size: 20px;
+    margin-bottom: 60px;
+    transition: transform 0.3s ease-in-out;
+}
+
+ol li:hover {
+    transform: rotate(-3deg);
+}

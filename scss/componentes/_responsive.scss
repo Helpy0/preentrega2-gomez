@@ -1,0 +1,64 @@
+@media screen and (max-width: 576px) {
+    /*INDEX*/
+    .contenedor {
+    flex-direction: column;
+    align-items: center;
+    }
+    
+    .contenedor img {
+    width: 10%;
+    height: auto;
+    }
+    
+    .contenedor ul {
+    width: 100%;
+    }
+    
+    .contenedor li {
+    margin: 10px;
+    }
+    .contenedor2{
+        display: none;
+    }
+    .titulo{
+    font-size: 20px;
+    }   
+    .navlista{
+    margin-top: 50px;
+}
+.footer {
+    margin-top: auto;
+
+
+}
+
+.navlista{ 
+    margin-top: 10px;
+}
+/*INDEX/
+
+
+    /*GASTRONOMIA*/
+    .sushi2 img{
+        display: none;
+    }
+    
+    .sushi img{
+    max-width: 80%;
+    height:auto;
+    
+    }
+    .textosushi{
+        padding: 0%;
+        text-align: center;
+        margin-left: 15%;
+        margin-top: 10%;
+    }
+    /*GASTRONOMIA*/
+
+/*CULTURALENGUAJE*/
+.image-container img {
+    max-width: 60%;
+}
+/*CULTURALENGUAJE*/
+}
