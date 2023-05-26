@@ -1,3 +1,10 @@
+@import './base/maps';
+
+
+@import './base/mixin';
+
+@import './base/variables';
+
 @import './base/resets';
 
 @import './componentes/header';
@@ -13,5 +20,3 @@
 @import './componentes/gastronomia';
 
 @import './componentes/footer';
-
-@import './componentes/responsive';

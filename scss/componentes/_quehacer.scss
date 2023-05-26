@@ -8,7 +8,7 @@
 .lista-lorem li {
     background-color: plum;
     border-radius: 10px;
-    box-shadow: 0 5px 10px rgba(0,0,0,0.2);
+    box-shadow: 0 5px 10px $shades;
     margin-bottom: 20px;
     overflow: hidden;
     position: relative;
@@ -20,13 +20,14 @@
 }
 
 .bloque h2 {
-    font-size: 24px;
+    font-size: map-get($map:$tamanios, $key:large);
     margin-top: 0;
-}
+
 
 .bloque p {
-    font-size: 16px;
+    font-size: map-get($map:$tamanios, $key:small);
     line-height: 1.5;
+}
 }
 
 .lista-lorem li:hover {

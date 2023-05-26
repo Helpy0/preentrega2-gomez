@@ -8,7 +8,27 @@
 }
 
 .textosushi {
+    font-size: map-get($map:$tamanios, $key:small );
     margin-left: 700px;
     margin-top: -300px;
     width: 400px;
+    @include responsive(){
+            padding: 0%;
+            text-align: center;
+            margin-left: 15%;
+            margin-top: 10%;
+        }
+    }
+
+.sushi2 img{
+    @include responsive(){
+    display: none;
+}
+
+.sushi img{
+    @include responsive(){
+        max-width: 80%;
+        height:auto;
+    }
+}
 }

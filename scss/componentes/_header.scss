@@ -6,8 +6,8 @@
 
 .titulo { 
     text-align: center;
-    font-size: 30px;
-    background-image: linear-gradient(to left, #FFC0CB, #FFE4E1)
+    font-size: map-get($map:$tamanios, $key:small)
+    background-image $colormain
 } 
 
 ol {
@@ -20,7 +20,7 @@ ol {
 }
 
 ol li {
-    font-size: 20px;
+    font-size: map-get($map:$tamanios, $key:small);
     margin-bottom: 60px;
     transition: transform 0.3s ease-in-out;
 }

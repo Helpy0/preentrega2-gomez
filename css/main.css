@@ -20,8 +20,7 @@ body {
 
 .titulo {
   text-align: center;
-  font-size: 30px;
-  background-image: linear-gradient(to left, #FFC0CB, #FFE4E1);
+  font-size: 18px background-image linear-gradient(to left, #FFC0CB, #FFE4E1);
 }
 
 ol {
@@ -34,7 +33,7 @@ ol {
 }
 
 ol li {
-  font-size: 20px;
+  font-size: 18px;
   margin-bottom: 60px;
   transition: transform 0.3s ease-in-out;
 }
@@ -50,9 +49,26 @@ ol li:hover {
   justify-content: space-between;
   align-content: stretch;
 }
+@media screen and (max-width: 576px) {
+  .contenedor {
+    flex-direction: column;
+    align-items: center;
+  }
+}
 .contenedor .contenedor img {
   width: 400px;
   height: 250px;
+}
+@media screen and (max-width: 576px) {
+  .contenedor .contenedor img {
+    width: 10%;
+    height: auto;
+  }
+}
+@media screen and (max-width: 576px) {
+  .contenedor .titulo {
+    font-size: 20px;
+  }
 }
 .contenedor .galeria {
   display: grid;
@@ -61,7 +77,8 @@ ol li:hover {
   margin-top: 30px;
 }
 .contenedor .galeria .imagen {
-  height: 100px;
+  height: 70px;
+  width: 110;
   overflow: hidden;
   border-radius: 5px;
   cursor: pointer;
@@ -74,19 +91,15 @@ ol li:hover {
 .contenedor .galeria .imagen img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
 }
 .contenedor .galeria2 {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 10px;
-  margin-top: auto;
-  margin-bottom: 20px;
 }
 .contenedor .galeria2 .imagen {
-  height: 100px;
-  overflow: hidden;
-  border-radius: 5px;
+  height: 70px;
+  border-radius: 10px;
   cursor: pointer;
   transition: all 0.3s ease;
 }
@@ -101,11 +114,15 @@ ol li:hover {
 .contenedor .galeria2 .imagen img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
 }
 .contenedor .contenedor2 img {
   width: 400px;
   height: 250px;
+}
+@media screen and (max-width: 576px) {
+  .contenedor .contenedor2 img {
+    display: none;
+  }
 }
 
 .galeria2 .imagen:hover {
@@ -124,6 +141,28 @@ ol li:hover {
   height: 250px;
 }
 
+@media screen and (max-width: 576px) {
+  .contenedor2 {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .contenedor ul {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 576px) {
+  .contenedor ul .contenedor li {
+    margin: 10px;
+  }
+}
+@media screen and (max-width: 576px) {
+  .contenedor ul .footer {
+    margin-top: auto;
+  }
+}
+
 .lista-lorem {
   list-style: none;
   margin: 0;
@@ -133,7 +172,7 @@ ol li:hover {
 .lista-lorem li {
   background-color: plum;
   border-radius: 10px;
-  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
   margin-bottom: 20px;
   overflow: hidden;
   position: relative;
@@ -145,12 +184,11 @@ ol li:hover {
 }
 
 .bloque h2 {
-  font-size: 24px;
+  font-size: 30px;
   margin-top: 0;
 }
-
-.bloque p {
-  font-size: 16px;
+.bloque h2 .bloque p {
+  font-size: 18px;
   line-height: 1.5;
 }
 
@@ -167,7 +205,7 @@ ol li:hover {
 }
 
 .cuadro {
-  background-image: linear-gradient(to left, #F5A9BC, #F9D0E3);
+  background-image: linear-gradient(to left, #3d206b, #7b11dd);
   border-radius: 10px;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
   padding: 2em;
@@ -188,6 +226,11 @@ ol li:hover {
   height: auto;
   box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3);
   transition: all 0.3s ease;
+}
+@media screen and (max-width: 576px) {
+  .image-container img {
+    max-width: 60%;
+  }
 }
 
 .image-container img:hover {
@@ -211,9 +254,30 @@ ol li:hover {
 }
 
 .textosushi {
+  font-size: 18px;
   margin-left: 700px;
   margin-top: -300px;
   width: 400px;
+}
+@media screen and (max-width: 576px) {
+  .textosushi {
+    padding: 0%;
+    text-align: center;
+    margin-left: 15%;
+    margin-top: 10%;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .sushi2 img {
+    display: none;
+  }
+}
+@media screen and (max-width: 576px) {
+  .sushi2 img .sushi img {
+    max-width: 80%;
+    height: auto;
+  }
 }
 
 .footer {
@@ -225,62 +289,6 @@ ol li:hover {
 
 .footer2 {
   display: none;
-}
-
-@media screen and (max-width: 576px) {
-  /*INDEX*/
-  .contenedor {
-    flex-direction: column;
-    align-items: center;
-  }
-  .contenedor img {
-    width: 10%;
-    height: auto;
-  }
-  .contenedor ul {
-    width: 100%;
-  }
-  .contenedor li {
-    margin: 10px;
-  }
-  .contenedor2 {
-    display: none;
-  }
-  .titulo {
-    font-size: 20px;
-  }
-  .navlista {
-    margin-top: 50px;
-  }
-  .footer {
-    margin-top: auto;
-  }
-  .navlista {
-    margin-top: 10px;
-  }
-  /*INDEX/
-
-
-      /*GASTRONOMIA*/
-  .sushi2 img {
-    display: none;
-  }
-  .sushi img {
-    max-width: 80%;
-    height: auto;
-  }
-  .textosushi {
-    padding: 0%;
-    text-align: center;
-    margin-left: 15%;
-    margin-top: 10%;
-  }
-  /*GASTRONOMIA*/
-  /*CULTURALENGUAJE*/
-  .image-container img {
-    max-width: 60%;
-  }
-  /*CULTURALENGUAJE*/
 }
 
 /*# sourceMappingURL=main.css.map */

@@ -9,5 +9,5 @@ body{
     min-height: 100vh;
     display: flex;
     flex-direction: column;
-    background-image: linear-gradient(to left, #FFC0CB, #FFE4E1)
+    background-image: $colormain;
 } 

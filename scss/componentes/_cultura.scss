@@ -7,9 +7,9 @@
 }
 
 .cuadro {
-    background-image: linear-gradient(to left, #F5A9BC, #F9D0E3);
+    background-image: $colorcuadro;
     border-radius: 10px;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+    box-shadow: 0px 0px 10px $shades;
     padding: 2em;
     transition: all 0.3s ease;
 }
@@ -25,8 +25,11 @@
 .image-container img {
     max-width: 40%;
     height: auto;
-    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3);
+    box-shadow: 0px 2px 5px $shades;
     transition: all 0.3s ease;
+    @include responsive (){
+            max-width: 60%;
+    }
 }
 
 .image-container img:hover {
